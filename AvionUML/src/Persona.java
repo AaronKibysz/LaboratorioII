@@ -3,6 +3,7 @@ public class Persona {
     private String nombre;
     private int edad;
 
+    //constructores
     public Persona(){}
     public Persona(int dni, String nombre, int edad){
         this.dni = dni;
@@ -10,10 +11,10 @@ public class Persona {
         this.edad = edad;
     }
 
+    //getters & setters
     public int getDni() {
         return dni;
     }
-
     public void setDni(int dni) {
         this.dni = dni;
     }
@@ -21,7 +22,6 @@ public class Persona {
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -29,7 +29,6 @@ public class Persona {
     public int getEdad() {
         return edad;
     }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }

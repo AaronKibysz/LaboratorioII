@@ -1,46 +1,47 @@
+import java.util.ArrayList;
+
 public class Vuelo {
-    private int nroVuelo;
-    Avion avion = new Avion();
-    Reserva reserva = new Reserva();
-    Piloto piloto = new Piloto();
-    Piloto copiloto = new Piloto();
-    public Vuelo(){}
-    public Vuelo(int nroVuelo, Avion avion, Reserva reserva, Piloto piloto, Piloto copiloto){
-        this.nroVuelo = nroVuelo;
+    private int nroDeVuelo;
+    private Avion avion;
+    private ArrayList<Reserva> reservas;
+    private Piloto piloto;
+    private Piloto copiloto;
+
+    //constructor
+    public Vuelo() {
+    }
+    public Vuelo(int nroDeVuelo, Avion avion, Piloto piloto, Piloto copiloto) {
+        this.nroDeVuelo = nroDeVuelo;
         this.avion = avion;
-        this.reserva = reserva;
         this.piloto = piloto;
         this.copiloto = copiloto;
     }
 
-    public int getNroVuelo() {
-        return nroVuelo;
+    //getters & setters
+    public int getNroDeVuelo() {
+        return nroDeVuelo;
     }
-
-    public void setNroVuelo(int nroVuelo) {
-        this.nroVuelo = nroVuelo;
+    public void setNroDeVuelo(int nroDeVuelo) {
+        this.nroDeVuelo = nroDeVuelo;
     }
 
     public Avion getAvion() {
         return avion;
     }
-
     public void setAvion(Avion avion) {
         this.avion = avion;
     }
 
-    public Reserva getReserva() {
-        return reserva;
+    public ArrayList<Reserva> getReservas() {
+        return reservas;
     }
-
-    public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
+    public void setReservas(ArrayList<Reserva> reservas) {
+        this.reservas = reservas;
     }
 
     public Piloto getPiloto() {
         return piloto;
     }
-
     public void setPiloto(Piloto piloto) {
         this.piloto = piloto;
     }
@@ -48,7 +49,6 @@ public class Vuelo {
     public Piloto getCopiloto() {
         return copiloto;
     }
-
     public void setCopiloto(Piloto copiloto) {
         this.copiloto = copiloto;
     }

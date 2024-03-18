@@ -1,40 +1,34 @@
-public class Piloto implements Volador{
+public class Piloto extends Persona implements Volador {
+    private int nroLicencia;
+
+    //constructores
+    public Piloto(){}
+    public Piloto(int nroLicencia, int dni, String nombre, int edad){
+        super(dni, nombre, edad);
+        this.nroLicencia = nroLicencia;
+    }
+
+    //getters & setters
+    public int getNroLicencia() {
+        return nroLicencia;
+    }
+    public void setNroLicencia(int nroLicencia) {
+        this.nroLicencia = nroLicencia;
+    }
+
+
+    //implementando interfaz
     @Override
     public void despegar() {
         System.out.println("El piloto está despegando.");
     }
-
     @Override
     public void volar() {
         System.out.println("El piloto está volando.");
     }
-
     @Override
     public void aterrizar() {
         System.out.println("El piloto está aterrizando.");
     }
-    private int nroLicensia;
-    Persona persona = new Persona();
 
-    public Piloto(){}
-    public Piloto(int nroLicensia, Persona persona){
-        this.nroLicensia = nroLicensia;
-        this.persona = persona;
-    }
-
-    public int getNroLicensia() {
-        return nroLicensia;
-    }
-
-    public void setNroLicensia(int nroLicensia) {
-        this.nroLicensia = nroLicensia;
-    }
-
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public void setPersona(Persona persona) {
-        this.persona = persona;
-    }
 }

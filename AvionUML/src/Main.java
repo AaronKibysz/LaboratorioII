@@ -45,10 +45,10 @@ public class Main {
                 System.out.println(reserva.getDestino());
                 System.out.println(reserva.getFechaIda());
                 System.out.println(reserva.getVueloIda().getNroDeVuelo());
-                System.out.println(reserva.getVueloIda().getPiloto());
+                System.out.println(reserva.getVueloIda().getPiloto().getNombre());
                 System.out.println(reserva.getFechaVuelta());
                 System.out.println(reserva.getVueloVuelta().getNroDeVuelo());
-                System.out.println(reserva.getVueloVuelta().getPiloto());
+                System.out.println(reserva.getVueloVuelta().getPiloto().getNombre());
 
             case 2:
                 //consultar
